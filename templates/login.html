@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p id="logo"> </p>
+<h1>Аварийный доступ</h1><br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.ast_name.label }}<br>
+        {{ form.ast_name(class="form-control") }}<br>
+        {% for error in form.ast_name.errors %}
+    <div class="error" role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>
+        {{ form.ast_password.label }}<br>
+        {{ form.ast_password(class="form-control", type="password") }}<br>
+        {% for error in form.ast_password.errors %}
+    <div class="error" role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>
+        {{ form.cap_name.label }}<br>
+        {{ form.cap_name(class="form-control") }}<br>
+        {% for error in form.cap_name.errors %}
+    <div class="error" role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>
+        {{ form.cap_password.label }}<br>
+        {{ form.cap_password(class="form-control", type="password") }}<br>
+        {% for error in form.cap_password.errors %}
+    <div class="error" role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+</form>
+{% endblock %}

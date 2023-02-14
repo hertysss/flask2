@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block content %}
+Фамилия: {{ data['lastname'] }}<br>
+Имя: {{ data['firstname'] }}<br>
+Образование: {{ data['education'] }}<br>
+Профессия: {{ data['profession'] }}<br>
+Пол: {{ data['sex'] }}<br>
+Мотивация: {{ data['motivation'] }}<br>
+Готовы ли вы остаться на Марсе: {{ data['ready'] }}<br>
+{% endblock %}

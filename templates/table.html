@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{super()}}
+    <h2>Оформление каюты</h2>
+    <table>
+    <tr><th>Цвет стен</th><th>Эмблема</th></tr>
+        <th><img src="{{data['url_sex']}}" alt="пол" weight="200" height="200"></th>
+        <th><img src="{{data['url_age']}}" alt="возраст" weight="200" height="200"></th>
+    </table>
+
+
+{% endblock %}

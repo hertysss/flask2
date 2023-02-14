@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Список профессий</h2>
+    {% if type_list != 'ol' and type_list != 'ul' %}
+        <h2 style="color:red">Неверный параметр</h2>
+    {% else %}
+        <{{type_list}}>
+            {% for profession in professions %}
+                <li>{{profession}}</li>
+            {% endfor %}
+        </{{type_list}}>
+    {% endif %}
+{% endblock %}

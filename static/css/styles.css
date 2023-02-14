@@ -1,0 +1,27 @@
+.error {color:red;}
+
+h4 {
+color: #2a5c03;
+padding-left: 20px;
+}
+
+p {margin-bottom: 10px;}
+
+div {margin-bottom: 10px;}
+
+p#logo {
+width:150px;
+height:50px;
+float: left;
+margin: 0 1em 1em 0;
+background:url('https://yastatic.net/s3/lyceum/content/images/second-year/web/MARS-2-7.png')
+}
+
+#main {
+background-color: #d1d1d1;
+}
+
+div.distribution{
+margin-left: 30px;
+font-weight: bold;
+}
