@@ -78,5 +78,25 @@ def table(sex, age):
     return render_template('table.html', data=data)
 
 
+@app.route('/training/<prof>')
+def training(prof):
+    data = {}
+    trainings = {'Инженерные тренажеры': ['инженер-исследователь', 'пилот',
+                                            'строитель', 'инженер по терраформированию',
+                                            'инженер жизнеобеспечения', 'киберинженер',
+                                            'штурман', 'пилот дронов'],
+                   'Научные симуляторы': ['экзобиолог', 'врач', 'климатолог',
+                                          'специалист по радиационной защите',
+                                          'астрогеолог', 'гляциолог', 'метеоролог',
+                                          'оператор марсохода']}
+    if prof in trainings['Инженерные тренажеры']:
+        data['train'] = 'Инженерные тренажеры'
+        data['url'] = join(DIR_IMG, 'ship1.jpg')
+    else:
+        data['train'] = 'Научные симуляторы'
+        data['url'] = join(DIR_IMG, 'ship2.jpg')
+    return render_template('training.html', data=data)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1', debug=True)
