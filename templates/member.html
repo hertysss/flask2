@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{super()}}
+    {% set user = data|random() %}
+    <h1 style="text-align: center;">{{user['name']}} {{user['surname']}}</h1>
+    <img src="{{user['photo']}}" alt="" style="margin: 10px auto 20px;display: block;">
+    <h2 style="text-align: center;">{{user['specializations']|sort()|join(', ')}}</h2>
+{% endblock %}

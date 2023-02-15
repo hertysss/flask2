@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Ридли",
+    "surname": "Скотт",
+    "photo": "https://tse1.mm.bing.net/th?id=OIP._BT6RAH-seezL-9rWo2k2wAAAA&w=160",
+    "specializations": [
+      "инженер-исследователь",
+      "экзобиолог"
+    ]
+  },
+  {
+    "name": "Энди",
+    "surname": "Уир",
+    "photo": "https://i.pinimg.com/236x/ca/9e/1c/ca9e1c1f3be5930840db009997e2b303--alien-coloring-pages-guc.jpg",
+    "specializations": [
+      "инженер-исследователь",
+      "пилот",
+      "строитель",
+      "экзобиолог"
+    ]
+  },
+  {
+    "name": "Марк",
+    "surname": "Уотни",
+    "photo": "https://resize-gulli.jnsmedia.fr/r/210,298,center-middle,ffffff/img/var/jeunesse/storage/images/coloriages/coloriages-dessins-animes/samsam/samsam-5/15144676-3-fre-FR/SamSam-5.jpg",
+    "specializations": [
+      "оператор марсохода",
+      "киберинженер",
+      "штурман",
+      "пилот дронов"
+    ]
+  },
+  {
+    "name": "Венката",
+    "surname": "Капур",
+    "photo": "https://image.shutterstock.com/image-vector/black-white-illustration-alien-pointing-260nw-146229515.jpg",
+    "specializations": [
+      "пилот",
+      "строитель",
+      "экзобиолог"
+    ]
+  },
+  {
+    "name": "Тедди",
+    "surname": "Сандрес",
+    "photo": "https://uti-puti.com.ua/colloring/64/8.jpg",
+    "specializations": [
+      "астрогеолог",
+      "гляциолог",
+      "инженер жизнеобеспечения",
+      "метеоролог"
+    ]
+  },
+  {
+    "name": "Шон",
+    "surname": "Бин",
+    "photo": "https://i.pinimg.com/236x/a8/28/87/a828873365bde21b5c67e59c3bb36bab.jpg?nii=t",
+    "specializations": [
+      "инженер по терраформированию",
+      "климатолог",
+      "специалист по радиационной защите"
+    ]
+  }
+]

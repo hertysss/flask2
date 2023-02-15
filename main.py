@@ -98,5 +98,12 @@ def training(prof):
     return render_template('training.html', data=data)
 
 
+@app.route('/member')
+def member():
+    with open('templates/member.json', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return render_template('member.html', data=data)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1', debug=True)
